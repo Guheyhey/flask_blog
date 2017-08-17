@@ -22,7 +22,6 @@ def index(page = 1):
     
     return render_template('blog/index.html', blog=blog, posts=posts)
     
-
 @app.route('/admin')
 @app.route('/admin/<int:page>')
 @author_required
